@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | ScreenSaga</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- BOX ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- OWL CAROUSEL (if you use it elsewhere) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" crossorigin="anonymous" />
+
+  <!-- APP CSS -->
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="app.css">
+
+  <style>
+    /* === ABOUT PAGE STYLES === */
+    .about-hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/about-bg.jpg") center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .about-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      color: var(--main-color);
+    }
+
+    .about-hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .about-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: var(--main-color);
+    }
+
+    .about-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .about-card {
+      background: #221f1f;
+      color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .about-card i {
+      font-size: 2.5rem;
+      color: var(--main-color);
+      margin-bottom: 15px;
+    }
+
+    .about-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .about-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+   <!-- NAV -->
+      <div class="nav-wrapper">
+         <div class="container">
+            <div class="nav">
+              <a href="#" class="logo">
+                <i class='bx bx-movie-play bx-tada main-color'></i>
+                Screen<span class="main-color spin-s">S</span>aga
+              </a> 
+                <ul class="nav-menu" id="nav-menu">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="movie.html">Movies</a></li>
+                 <li><a href="series.html">Series</a></li>
+                 <li class="dropdown">
+                 <a href="#">Genre ▼</a>
+                 <ul class="dropdown-content">
+                      <li><a id="action" href="">Action</a></li>
+                      <li><a href="">Adventure</a></li>
+                      <li><a href="">animation</a></li>
+                      <li><a href="">Biography</a></li>
+                      <li><a href="">Comedy</a></li>
+                      <li><a href="">Crime</a></li>
+                      <li><a href="">Drama</a></li>
+                      <li><a href="">Documentary</a></li>
+                      <li><a href="">Fantasy</a></li>
+                      <li><a href="">Horror</a></li>
+                      <li><a href="">Musical</a></li>
+                      <li><a href="">Romance</a></li>
+                      <li><a href="">Sci-Fi</a></li>
+                      <li><a href="">Sports</a></li>
+                      <li><a href="">Thriller</a></li>
+                      <li><a href="">War</a></li>
+                 </ul>
+                 </li>
+                 <li><a href="aboutus.html">About Us </a></li>
+                 <li><a href="howtodownload.html">How to download</a></li>
+                 
+                  <li>
+                    <a href="#" class="btn btn-hover">
+                      <span>Sign in</span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                   <div class="hamburger"></div>
+                </div>
+            </div>
+         </div>
+      </div>
+      <!-- END NAV -->
+  <!-- HERO -->
+  <section class="about-hero">
+    <h1>About ScreenSaga</h1>
+    <p>
+      At ScreenSaga, we believe movies and series aren’t just entertainment — they’re experiences that connect people across the globe.
+    </p>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="about-section">
+    <h2>Who We Are</h2>
+    <div class="about-cards">
+      <div class="about-card">
+        <i class='bx bx-bulb'></i>
+        <h3>Our Mission</h3>
+        <p>To bring you the best collection of movies and series with a smooth and enjoyable experience.</p>
+      </div>
+      <div class="about-card">
+        <i class='bx bx-group'></i>
+        <h3>Our Team</h3>
+        <p>A group of passionate movie lovers and developers who want to make streaming fun and easy.</p>
+      </div>
+      <div class="about-card">
+        <i class='bx bx-world'></i>
+        <h3>Our Vision</h3>
+        <p>To become your go-to platform for discovering, watching, and loving movies worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+          <footer class="about-section" style="text-align:center; color:#888;">
+          
+            <div class="social-icons">
+             <img src="images/fb_social media_facebook_facebook logo_social network_icon.png"alt="fb_social">
+
+             <img src="images/instagram_social media_instagram logo_icon.png"alt="instagram_social">
+
+             <img src="images/bird_social media_social network_tweet_twitter_icon.png"alt="twitter_social">
+
+             <img src="images/linkedin_network_social network_linkedin logo_icon.png"alt="linkedin_social">
+           </div>
+
+            <div class="copyright"><p> &copy; 2025 ScreenSaga. All rights reserved.</p></div>
+          </footer>
+</body>
+</html>
