@@ -17,11 +17,8 @@ const heroSlides = [
     description: "He carries the shield, but can he carry the weight of a fractured world?",
     background: "images/Screenshot 2025-08-19 130137.png"
   },
-  {
-    title: "DOG MAN",
-    description: "Half dog, half man… all hero — but can he sniff out trouble before it's too late?",
-    background: "images/Dog  Man.jpg"
-  }
+  
+  
 ];
 
 let currentSlide = 0;
@@ -54,5 +51,6 @@ leftArrow.addEventListener("click", () => {
 
 // INITIAL DISPLAY
 showSlide(currentSlide);
+
 
 

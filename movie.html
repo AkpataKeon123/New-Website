@@ -1,117 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-     
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        ScreenSaga
-    </title>
-    <!-- GOOGLE FONTS -->
-     <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-
-     <!--OWL CAROUSEL-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-     <!--BOX ICONS-->
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-      <!--APP CSS-->
-      <link rel="stylesheet" href="grid.css">
-      <link rel="stylesheet" href="app.css">
-
-     
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ScreenSaga | Movies</title>
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="grid.css"/>
+  <link rel="stylesheet" href="app.css"/>
+  <!-- Page-Specific Styles -->
+  <link rel="stylesheet" href="movie.css"/>
 </head>
-
 <body>
-     
-     <!-- NAV -->
-      <div class="nav-wrapper">
-         <div class="container">
-            <div class="nav">
-              <a href="#" class="logo">
-                <i class='bx bx-movie-play bx-tada main-color'></i>
-                Screen<span class="main-color spin-s">S</span>aga
-              </a> 
-                <ul class="nav-menu" id="nav-menu">
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="movie.html">Movies</a></li>
-                 <li><a href="series.html">Series</a></li>
-                  <li class="dropdown">
-                 <a href="#">Genre ▼</a>
-                 <ul class="dropdown-content">
-                      <li><a id="action" href="">Action</a></li>
-                      <li><a href="">Adventure</a></li>
-                      <li><a href="">animation</a></li>
-                      <li><a href="">Biography</a></li>
-                      <li><a href="">Comedy</a></li>
-                      <li><a href="">Crime</a></li>
-                      <li><a href="">Drama</a></li>
-                      <li><a href="">Documentary</a></li>
-                      <li><a href="">Fantasy</a></li>
-                      <li><a href="">Horror</a></li>
-                      <li><a href="">Musical</a></li>
-                      <li><a href="">Romance</a></li>
-                      <li><a href="">Sci-Fi</a></li>
-                      <li><a href="">Sports</a></li>
-                      <li><a href="">Thriller</a></li>
-                      <li><a href="">War</a></li>
-                 </ul>
-                 </li>
-                 <li><a href="aboutus.html">About Us</a></li>
-                 <li><a href="howtodownload.html">How to download</a></li>
-                
-                  <li>
-                    <a href="#" class="btn btn-hover">
-                      <span>Sign in</span>
-                    </a>
-                  </li>
-                </ul>
-                <!-- MOBILE MENU TOGGLE -->
-                <div class="hamburger-menu" id="hamburger-menu">
-                   <div class="hamburger"></div>
-                </div>
-            </div>
-         </div>
+  <!-- NAVBAR -->
+  <div class="nav-wrapper">
+    <div class="container">
+      <div class="nav">
+        <a href="index.html" class="logo">
+          <i class='bx bx-movie-play bx-tada main-color'></i>
+          Screen<span class="main-color spin-s">S</span>aga
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movie.html">Movies</a></li>
+          <li><a href="series.html">Series</a></li>
+          <li class="dropdown">
+            <a href="#">Genre ▼</a>
+            <ul class="dropdown-content">
+              <li><a href="">Action</a></li>
+              <li><a href="">Adventure</a></li>
+              <li><a href="">Animation</a></li>
+              <li><a href="">Biography</a></li>
+              <li><a href="">Comedy</a></li>
+              <li><a href="">Crime</a></li>
+              <li><a href="">Drama</a></li>
+              <li><a href="">Documentary</a></li>
+              <li><a href="">Fantasy</a></li>
+              <li><a href="">Horror</a></li>
+              <li><a href="">Musical</a></li>
+              <li><a href="">Romance</a></li>
+              <li><a href="">Sci-Fi</a></li>
+              <li><a href="">Sports</a></li>
+              <li><a href="">Thriller</a></li>
+              <li><a href="">War</a></li>
+            </ul>
+          </li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="howtodownload.html">How to download</a></li>
+          <li>
+            <a href="signin.html" class="btn btn-hover">
+              <span>Sign in</span>
+            </a>
+          </li>
+        </ul>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="hamburger"></div>
+        </div>
       </div>
-      <!-- END NAV -->
-     
-       <!-- SLOW, SMOOTH SPINNING S STYLE -->
-      <style>
-        @keyframes spin {
-          0% {
-            transform: rotate(0deg);
-          }
-          100% {
-            transform: rotate(360deg);
-          }
-        }
+    </div>
+  </div>
+  <!-- END NAVBAR -->
 
-        .spin-s {
-          display: inline-block;
-          animation: spin 4s ease-in-out infinite; /* slower, smoother spin */
-        }
+  <!-- PAGE HEADER / HERO BANNER -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Movies</h1>
+      <p class="page-subtitle">Discover the latest and greatest movies on ScreenSaga</p>
+    </div>
+  </header>
 
-        
-       
-      </style>
+  <!-- LATEST RELEASES GRID -->
+  <section class="movies container">
+    <h2 class="section-title">Latest Releases</h2>
+    <div class="movie-grid">
+      <!-- Example Movie Card -->
+      <div class="movie-card">
+        <div class="movie-img">
+          <img src="images/movie1.jpg" alt="Movie Title">
+        </div>
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span>2025 • Action</span>
+        </div>
+      </div>
+      <!-- Add more movie cards here -->
+    </div>
+  </section>
 
-       <!-- FOOTER -->
-          <footer class="about-section" style="text-align:center; color:#888;">
-          
-            <div class="social-icons">
-             <img src="images/fb_social media_facebook_facebook logo_social network_icon.png"alt="fb_social">
+  <!-- POPULAR PICKS GRID -->
+  <section class="movies container">
+    <h2 class="section-title">Popular Picks</h2>
+    <div class="movie-grid">
+      <!-- Example Movie Card -->
+      <div class="movie-card">
+        <div class="movie-img">
+          <img src="images/movie2.jpg" alt="Movie Title">
+        </div>
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span>2024 • Sci-Fi</span>
+        </div>
+      </div>
+      <!-- Add more movie cards here -->
+    </div>
+  </section>
 
-             <img src="images/instagram_social media_instagram logo_icon.png"alt="instagram_social">
+  <!-- FOOTER -->
+  <footer class="about-section" style="text-align:center; color:#888;">
+    <div class="social-icons">
+      <img src="images/fb_social media_facebook_facebook logo_social network_icon.png" alt="fb_social">
+      <img src="images/instagram_social media_instagram logo_icon.png" alt="instagram_social">
+      <img src="images/bird_social media_social network_tweet_twitter_icon.png" alt="twitter_social">
+      <img src="images/linkedin_network_social network_linkedin logo_icon.png" alt="linkedin_social">
+    </div>
+    <div class="copyright"><p> &copy; 2025 ScreenSaga. All rights reserved.</p></div>
+  </footer>
 
-             <img src="images/bird_social media_social network_tweet_twitter_icon.png"alt="twitter_social">
-
-             <img src="images/linkedin_network_social network_linkedin logo_icon.png"alt="linkedin_social">
-           </div>
-
-            <div class="copyright"><p> &copy; 2025 ScreenSaga. All rights reserved.</p></div>
-          </footer>
-  </body>
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>

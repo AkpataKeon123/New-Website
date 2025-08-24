@@ -1,0 +1,78 @@
+ /* Sign In Page Styles */
+    body {
+      background: #181616;
+      font-family: 'Cairo', sans-serif;
+      color: #fff;
+    }
+
+    .signin-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .signin-box {
+      background: #221f1f;
+      padding: 40px 30px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .signin-box h2 {
+      margin-bottom: 20px;
+      color: var(--main-color);
+    }
+
+    .signin-box form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .signin-box input {
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #2e2b2b;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .signin-box input:focus {
+      outline: 2px solid var(--main-color);
+    }
+
+    .signin-btn {
+      margin-top: 15px;
+      padding: 12px;
+      background: var(--main-color);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .signin-btn:hover {
+      background: #a83224;
+    }
+
+    .signin-links {
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+
+    .signin-links a {
+      color: var(--main-color);
+      text-decoration: none;
+    }
+
+    .signin-links a:hover {
+      text-decoration: underline;
+    }

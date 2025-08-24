@@ -245,10 +245,23 @@ a.logo:hover {
   position: relative;
   height: 100vh;
   background: url("") no-repeat center center/cover;
-  display: flex;
   align-items: center;
   padding: 0 50px;
   color: #fff;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  transition: background 1s ease-in-out;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .hero::before {
@@ -282,77 +295,6 @@ a.logo:hover {
   display: flex;
   gap: 15px;
 }
-
-/* ===== HERO SECTION STYLING ===== */
-.hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  transition: background 0.7s ease-in-out;
-}
-
-.hero .overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 600px;
-  padding: 20px;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 900;
-  color: var(--main-color);
-  margin-bottom: 0.5rem;
-}
-
-.hero-description {
-  font-size: 1.2rem;
-  color: #ddd;
-  margin-bottom: 1.5rem;
-}
-
-.hero-buttons .btn-hero {
-  margin-right: 1rem;
-}
-
-/* ===== HERO ARROWS ===== */
-.hero-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.5rem;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s;
-  z-index: 3;
-}
-
-.hero-arrow:hover {
-  background: #795252;
-}
-
-.hero-arrow.left {
-  left: 20px;
-}
-
-.hero-arrow.right {
-  right: 20px;
-}
-
 
 .btn-hero {
   padding: 10px 20px;
