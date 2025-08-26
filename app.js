@@ -3,6 +3,30 @@ $(document).ready(() => {
        $('#hamburger-menu').toggleClass('active') 
         $('#nav-menu').toggleClass('active') 
     })
+    
+// setting owl carousel
+
+let navtext = ["<i class='bx bx-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"];
+
+$('#hero-carousel').owlCarousel({
+    items:1,
+    dots: false,
+    loop: true,
+    nav:true,
+    navText: navtext,
+    autoplay: true,
+    autoplayHoverPause: true
+});
+  
+    $('#top-movies-slide').owlCarousel({
+    items: 6,
+    dots: false,
+    loop: true,
+    autoplay: false,
+    autoplayHoverPause: true,
+ }) 
+ 
+   
 })
 
 // HERO SLIDER DATA
@@ -51,6 +75,3 @@ leftArrow.addEventListener("click", () => {
 
 // INITIAL DISPLAY
 showSlide(currentSlide);
-
-
-

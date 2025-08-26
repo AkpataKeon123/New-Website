@@ -254,7 +254,7 @@ a.logo:hover {
   align-items: center;
   background-size: cover;
   background-position: center;
-  transition: background 1s ease-in-out;
+  transition: background 0.7s ease-in-out;
 }
 
 .hero .overlay {
@@ -336,11 +336,11 @@ a.logo:hover {
   padding: 0.5rem 1rem;
   border-radius: 50%;
   z-index: 3;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease-in-out;
 }
 
 .hero-arrow:hover {
-  background: rgba(192,57,43,0.8); /* red hover */
+  background: rgba(71, 62, 61, 0.8); /* red hover */
 }
 
 .hero-arrow.left {
