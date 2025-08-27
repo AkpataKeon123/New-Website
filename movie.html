@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+     
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ScreenSaga | Movies</title>
-  <!-- Boxicons -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-  <!-- Core Styles -->
-  <link rel="stylesheet" href="grid.css"/>
-  <link rel="stylesheet" href="app.css"/>
-  <!-- Page-Specific Styles -->
-  <link rel="stylesheet" href="movie.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        ScreenSaga
+    </title>
+    <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+     <!--OWL CAROUSEL-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!--BOX ICONS-->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+      <!--APP CSS-->
+      <link rel="stylesheet" href="grid.css">
+      <link rel="stylesheet" href="app.css">
+      <link rel="stylesheet" href="movie.css">
+
+     
 </head>
+
 <body>
-  <!-- NAVBAR -->
-  <div class="nav-wrapper">
-    <div class="container">
-      <div class="nav">
-        <a href="index.html" class="logo">
-          <i class='bx bx-movie-play bx-tada main-color'></i>
-          Screen<span class="main-color spin-s">S</span>aga
-        </a>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movie.html">Movies</a></li>
-          <li><a href="series.html">Series</a></li>
-          <li class="dropdown">
-            <a href="#">Genre ▼</a>
-            <ul class="dropdown-content">
-              <li><a href="">Action</a></li>
-              <li><a href="">Adventure</a></li>
-              <li><a href="">Animation</a></li>
-              <li><a href="">Biography</a></li>
-              <li><a href="">Comedy</a></li>
-              <li><a href="">Crime</a></li>
-              <li><a href="">Drama</a></li>
-              <li><a href="">Documentary</a></li>
-              <li><a href="">Fantasy</a></li>
-              <li><a href="">Horror</a></li>
-              <li><a href="">Musical</a></li>
-              <li><a href="">Romance</a></li>
-              <li><a href="">Sci-Fi</a></li>
-              <li><a href="">Sports</a></li>
-              <li><a href="">Thriller</a></li>
-              <li><a href="">War</a></li>
-            </ul>
-          </li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="howtodownload.html">How to download</a></li>
-          <li>
-            <a href="signin.html" class="btn btn-hover">
-              <span>Sign in</span>
-            </a>
-          </li>
-        </ul>
-        <div class="hamburger-menu" id="hamburger-menu">
-          <div class="hamburger"></div>
-        </div>
+     
+     <!-- NAV -->
+      <div class="nav-wrapper">
+         <div class="container">
+            <div class="nav">
+              <a href="#" class="logo">
+                <i class='bx bx-movie-play bx-tada main-color'></i>
+                Screen<span class="main-color spin-s">S</span>aga
+              </a> 
+                <ul class="nav-menu" id="nav-menu">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="movie.html">Movies</a></li>
+                 <li><a href="series.html">Series</a></li>
+                 <li class="dropdown">
+                 <a href="#">Genre ▼</a>
+                 <ul class="dropdown-content">
+                      <li><a id="action" href="">Action</a></li>
+                      <li><a href="">Adventure</a></li>
+                      <li><a href="">animation</a></li>
+                      <li><a href="">Biography</a></li>
+                      <li><a href="">Comedy</a></li>
+                      <li><a href="">Crime</a></li>
+                      <li><a href="">Drama</a></li>
+                      <li><a href="">Documentary</a></li>
+                      <li><a href="">Fantasy</a></li>
+                      <li><a href="">Horror</a></li>
+                      <li><a href="">Musical</a></li>
+                      <li><a href="">Romance</a></li>
+                      <li><a href="">Sci-Fi</a></li>
+                      <li><a href="">Sports</a></li>
+                      <li><a href="">Thriller</a></li>
+                      <li><a href="">War</a></li>
+                 </ul>
+                 </li>
+                 <li><a href="aboutus.html">About Us </a></li>
+                 <li><a href="howtodownload.html">How to download</a></li>
+                 
+                  <li>
+                    <a href="signin.html" class="btn btn-hover">
+                      <span>Sign in</span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                   <div class="hamburger"></div>
+                </div>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-  <!-- END NAVBAR -->
+      <!-- END NAV -->
+
+
 
   <!-- PAGE HEADER / HERO BANNER -->
   <header class="page-header">
@@ -71,40 +90,90 @@
   </header>
 
   <!-- LATEST RELEASES GRID -->
-  <section class="movies container">
-    <h2 class="section-title">Latest Releases</h2>
-    <div class="movie-grid">
-      <!-- Example Movie Card -->
-      <div class="movie-card">
-        <div class="movie-img">
-          <img src="images/movie1.jpg" alt="Movie Title">
-        </div>
-        <div class="movie-info">
-          <h3>Movie Title</h3>
-          <span>2025 • Action</span>
-        </div>
-      </div>
-      <!-- Add more movie cards here -->
+  <div class="container">
+  <h2 class="section-title">Latest Releases</h2>
+
+  <div class="movie-flex-row" id="top-movies-row">
+    
+    <!-- Bloodshot -->
+    <div class="movie-item"> 
+      <img src="images/download (7).jpeg" alt="Bloodshot">
+      <h3>Bloodshot</h3>
     </div>
-  </section>
+
+    <!-- Captain Marvel -->
+    <div class="movie-item">
+      <img src="images/images (27).jpeg" alt="Captain Marvel">
+      <h3>Captain Marvel</h3>
+    </div>
+
+    <!-- The Dark Knight -->
+    <div class="movie-item">
+      <img src="images/Dog  Man.jpg" alt="The Dark Knight">
+      <h3>The Dark Knight</h3>
+    </div>
+
+    <!-- Demon Slayer -->
+    <div class="movie-item">
+      <img src="images/download (1).jpg" alt="Demon Slayer">
+      <h3>Demon Slayer</h3>
+    </div>
+
+    <!-- Supergirl -->
+    <div class="movie-item">
+      <img src="images/download (3).jpeg" alt="Supergirl">
+      <h3>Supergirl</h3>
+    </div>
+
+    
+    
+    
+  </div>
+  
 
   <!-- POPULAR PICKS GRID -->
-  <section class="movies container">
-    <h2 class="section-title">Popular Picks</h2>
-    <div class="movie-grid">
-      <!-- Example Movie Card -->
-      <div class="movie-card">
-        <div class="movie-img">
-          <img src="images/movie2.jpg" alt="Movie Title">
-        </div>
-        <div class="movie-info">
-          <h3>Movie Title</h3>
-          <span>2024 • Sci-Fi</span>
-        </div>
-      </div>
-      <!-- Add more movie cards here -->
+  <div class="container-2">
+  <h2 class="section-title">Popular Picks</h2>
+
+  
+
+  <div class="movie-flex-row" id="top-movies-row">
+    
+    <!-- Bloodshot -->
+    <div class="movie-item"> 
+      <img src="images/download (7).jpeg" alt="Bloodshot">
+      <h3>Bloodshot</h3>
     </div>
-  </section>
+
+    <!-- Captain Marvel -->
+    <div class="movie-item">
+      <img src="images/images (27).jpeg" alt="Captain Marvel">
+      <h3>Captain Marvel</h3>
+    </div>
+
+    <!-- The Dark Knight -->
+    <div class="movie-item">
+      <img src="images/Dog  Man.jpg" alt="The Dark Knight">
+      <h3>The Dark Knight</h3>
+    </div>
+
+    <!-- Demon Slayer -->
+    <div class="movie-item">
+      <img src="images/download (1).jpg" alt="Demon Slayer">
+      <h3>Demon Slayer</h3>
+    </div>
+
+    <!-- Supergirl -->
+    <div class="movie-item">
+      <img src="images/download (3).jpeg" alt="Supergirl">
+      <h3>Supergirl</h3>
+    </div>
+
+    
+    
+    
+  </div>
+  
 
   <!-- FOOTER -->
   <footer class="about-section" style="text-align:center; color:#888;">

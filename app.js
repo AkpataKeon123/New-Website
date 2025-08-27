@@ -75,3 +75,14 @@ leftArrow.addEventListener("click", () => {
 
 // INITIAL DISPLAY
 showSlide(currentSlide);
+
+function scrollMovies(direction) {
+  const row = document.getElementById('top-movies-row');
+  const scrollAmount = 300; // adjust how far it scrolls
+  row.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
+}
+
+
