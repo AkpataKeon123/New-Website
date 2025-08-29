@@ -32,11 +32,7 @@ img {
     max-width: 100%;
 }
 
-.main-color {
-    color: var(--main-color);
-    font-family: "Cairo", sans-serif;
 
-}
 
 .container {
     max-width: 1920px;
