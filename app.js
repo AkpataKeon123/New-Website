@@ -32,17 +32,21 @@ $('#hero-carousel').owlCarousel({
 // HERO SLIDER DATA
 const heroSlides = [
   {
-    title: "IRON HEART",
-    description: "Every hero needs an origin — hers could change the Marvel universe forever.",
-    background: "images/download 5.jpg"
+    title: "Venom - The Last Dance",
+    description: "The end is coming, Eddie… but whose side will we be on when the last dance begins?",
+    background: "images/Venom The Last Dance.jpg"
   },
   {
-    title: "Captain America - Brave New World",
-    description: "He carries the shield, but can he carry the weight of a fractured world?",
-    background: "images/Screenshot 2025-08-19 130137.png"
+    title: "Head Of States",
+    description: "One mistake in power… and the whole nation pays the price.",
+    background: "images/Head of states.jpg"
   },
-  
-  
+  {
+    title: "Dog Man",
+    description: "When the line between hero and hound is crossed… the real fight begins.",
+    background: "images/Dog Man.jpg"
+  },
+
 ];
 
 let currentSlide = 0;
