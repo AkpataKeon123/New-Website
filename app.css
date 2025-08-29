@@ -34,6 +34,8 @@ img {
 
 .main-color {
     color: var(--main-color);
+    font-family: "Cairo", sans-serif;
+
 }
 
 .container {
@@ -103,7 +105,10 @@ img {
 a.logo:hover {
     color: unset;
 }
-
+ .main-color:hover {
+    color: var(--main-color);
+    text: bold;
+  }
 .btn{
     color: #ffffff;
     padding: .25rem 1.5rem;
