@@ -34,17 +34,17 @@ const heroSlides = [
   {
     title: "Venom - The Last Dance",
     description: "The end is coming, Eddie… but whose side will we be on when the last dance begins?",
-    background: "images/Venom The Last Dance.jpg"
+    background: "images/venom the.jpg"
   },
   {
     title: "Head Of States",
     description: "One mistake in power… and the whole nation pays the price.",
-    background: "images/Head of states.jpg"
+    background: "images/Heads of state.jpg"
   },
   {
     title: "Dog Man",
     description: "When the line between hero and hound is crossed… the real fight begins.",
-    background: "images/Dog Man.jpg"
+    background: "images/Trailer.jpg"
   },
 
 ];
